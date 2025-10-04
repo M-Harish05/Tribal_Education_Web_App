@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors */
+    --color-background: #FFF8DC; /* warm cream */
+    --color-foreground: #2F1B14; /* deep brown */
+    --color-border: rgba(210, 105, 30, 0.2); /* ochre at 20% opacity */
+    --color-input: #F5F5DC; /* beige */
+    --color-ring: #8B4513; /* terracotta */
+    --color-card: #F5F5DC; /* beige */
+    --color-card-foreground: #2F1B14; /* deep brown */
+    --color-popover: #F5F5DC; /* beige */
+    --color-popover-foreground: #2F1B14; /* deep brown */
+    --color-muted: #F5F5DC; /* beige */
+    --color-muted-foreground: #5D4E37; /* medium brown */
+
+    /* Brand Colors */
+    --color-primary: #8B4513; /* terracotta */
+    --color-primary-foreground: #FFFFFF; /* white */
+    --color-secondary: #D2691E; /* ochre */
+    --color-secondary-foreground: #2F1B14; /* deep brown */
+    --color-accent: #228B22; /* forest green */
+    --color-accent-foreground: #FFFFFF; /* white */
+
+    /* Status Colors */
+    --color-success: #32CD32; /* lime green */
+    --color-success-foreground: #2F1B14; /* deep brown */
+    --color-warning: #FF8C00; /* warm orange */
+    --color-warning-foreground: #2F1B14; /* deep brown */
+    --color-error: #CD5C5C; /* muted red */
+    --color-error-foreground: #FFFFFF; /* white */
+    --color-destructive: #CD5C5C; /* muted red */
+    --color-destructive-foreground: #FFFFFF; /* white */
+
+    /* Shadow Variables */
+    --shadow-color: rgba(139, 69, 19, 0.1); /* terracotta shadow */
+    --shadow-sm: 0 2px 4px var(--shadow-color);
+    --shadow-md: 0 4px 8px var(--shadow-color);
+    --shadow-lg: 0 8px 16px var(--shadow-color);
+
+    /* Animation Variables */
+    --animation-timing: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --animation-duration: 250ms;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .font-caption {
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer components {
+  .tribal-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23D2691E' fill-opacity='0.1'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .voice-pulse {
+    animation: pulse 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.8;
+      transform: scale(1.05);
+    }
+  }
+
+  .smooth-transition {
+    transition: all var(--animation-duration) var(--animation-timing);
+  }
+}
