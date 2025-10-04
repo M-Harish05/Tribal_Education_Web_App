@@ -1,0 +1,121 @@
+Folder PATH listing
+Volume serial number is C681-C8FA
+C:.
+¦   .env
+¦   .gitignore
+¦   favicon.ico
+¦   folder_tree.txt
+¦   index.html
+¦   jsconfig.json
+¦   package-lock.json
+¦   package.json
+¦   postcss.config.js
+¦   README.md
+¦   tailwind.config.js
+¦   vite.config.mjs
+¦   
++---public
+¦   ¦   favicon.ico
+¦   ¦   manifest.json
+¦   ¦   robots.txt
+¦   ¦   _redirects
+¦   ¦   
+¦   +---assets
+¦       +---images
+¦               no_image.png
+¦               
++---src
+    ¦   App.jsx
+    ¦   index.jsx
+    ¦   Routes.jsx
+    ¦   
+    +---components
+    ¦   ¦   AppIcon.jsx
+    ¦   ¦   AppImage.jsx
+    ¦   ¦   ErrorBoundary.jsx
+    ¦   ¦   ScrollToTop.jsx
+    ¦   ¦   
+    ¦   +---ui
+    ¦           Button.jsx
+    ¦           Checkbox.jsx
+    ¦           Header.jsx
+    ¦           Input.jsx
+    ¦           NotificationAlertBanner.jsx
+    ¦           OfflineStatusIndicator.jsx
+    ¦           ProgressIndicatorBadge.jsx
+    ¦           Select.jsx
+    ¦           VoiceNavigationButton.jsx
+    ¦           
+    +---pages
+    ¦   ¦   NotFound.jsx
+    ¦   ¦   
+    ¦   +---basic literacy-learning
+    ¦   ¦   ¦   index.jsx
+    ¦   ¦   ¦   
+    ¦   ¦   +---components
+    ¦   ¦           CategorySelector.jsx
+    ¦   ¦           InteractiveLessonViewer.jsx
+    ¦   ¦           LessonCard.jsx
+    ¦   ¦           ProgressTracker.jsx
+    ¦   ¦           VoiceInstructionPanel.jsx
+    ¦   ¦           
+    ¦   +---dashboard-home
+    ¦   ¦   ¦   index.jsx
+    ¦   ¦   ¦   
+    ¦   ¦   +---components
+    ¦   ¦           LearningModuleCard.jsx
+    ¦   ¦           MotivationalQuote.jsx
+    ¦   ¦           QuickAccessPanel.jsx
+    ¦   ¦           RecentActivityFeed.jsx
+    ¦   ¦           WelcomeHeader.jsx
+    ¦   ¦           
+    ¦   +---government-schemes-hub
+    ¦   ¦   ¦   index.jsx
+    ¦   ¦   ¦   
+    ¦   ¦   +---components
+    ¦   ¦           CategoryFilter.jsx
+    ¦   ¦           DocumentGuidance.jsx
+    ¦   ¦           NotificationPanel.jsx
+    ¦   ¦           SchemeCard.jsx
+    ¦   ¦           SearchBar.jsx
+    ¦   ¦           SuccessStoryCard.jsx
+    ¦   ¦           
+    ¦   +---login-authentication
+    ¦   ¦   ¦   index.jsx
+    ¦   ¦   ¦   
+    ¦   ¦   +---components
+    ¦   ¦           LoginForm.jsx
+    ¦   ¦           OTPInput.jsx
+    ¦   ¦           TribalPattern.jsx
+    ¦   ¦           VoiceInputButton.jsx
+    ¦   ¦           WelcomeHeader.jsx
+    ¦   ¦           
+    ¦   +---progress-tracking
+    ¦   ¦   ¦   index.jsx
+    ¦   ¦   ¦   
+    ¦   ¦   +---components
+    ¦   ¦           AchievementBadgeGrid.jsx
+    ¦   ¦           CertificationStatusCard.jsx
+    ¦   ¦           CommunityLeaderboard.jsx
+    ¦   ¦           LearningGoalsCard.jsx
+    ¦   ¦           ModuleProgressCard.jsx
+    ¦   ¦           ProgressOverviewCard.jsx
+    ¦   ¦           
+    ¦   +---traditional-knowledge
+    ¦       ¦   index.jsx
+    ¦       ¦   
+    ¦       +---components
+    ¦               AudioPlayer.jsx
+    ¦               CategoryFilter.jsx
+    ¦               CommunityContributions.jsx
+    ¦               ContributionModal.jsx
+    ¦               KnowledgeCard.jsx
+    ¦               SearchBar.jsx
+    ¦               
+    +---styles
+    ¦       index.css
+    ¦       tailwind.css
+    ¦       
+    +---utils
+            cn.js
+            
